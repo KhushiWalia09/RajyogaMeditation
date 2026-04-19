@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience Rajyoga Meditation. Connect with the supreme soul and find inner peace.">
+  <title>Rajyoga Meditation | A Journey to Inner Peace</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="aura-container" aria-hidden="true">
+    <div class="aura aura-1"></div>
+    <div class="aura aura-2"></div>
+    <div class="aura aura-3"></div>
+  </div>
+
+  <main id="app-container">
+    
+    <!-- Redesigned Landing Page (SETO Layout + Supreme Soul Theme) -->
+    <section id="intro" class="page active landing-page">
+      <div class="landing-bg">
+        <!-- Abstract representation of the Supreme Soul light rays -->
+        <div class="supreme-glow-core"></div>
+        <div class="supreme-glow-red"></div>
+        <div class="supreme-glow-orange"></div>
+      </div>
+
+      <div class="landing-content">
+        <!-- Navigation -->
+        <nav class="top-bar">
+          <div style="display: flex; flex-direction: column;">
+            <div class="brand">
+              <span class="material-icons logo-icon">self_improvement</span>
+              <span class="brand-name">RAJYOGA</span>
+            </div>
+            <span style="font-size: 0.75rem; color: #4a4a4a; font-weight: 500; letter-spacing: 0.5px; padding-left: 32px; margin-top: -2px;">Made by Amar and Sushint</span>
+          </div>
+          <div class="nav-links">
+            <a href="#" onclick="showPage('about'); return false;">About</a>
+            <a href="#">Centers</a>
+          </div>
+          <button class="nav-btn-pill" onclick="showPage('theme')">Begin Journey</button>
+        </nav>
+
+        <!-- Main Grid Area -->
+        <div class="hero-grid">
+          
+          <!-- Left Column -->
+          <div class="grid-left">
+            <p class="sub-headline">Turn your thoughts<br>into a peaceful<br>spiritual state.</p>
+            
+            <div class="glass-card portrait-card">
+              <div class="card-header">
+                <span>DAILY<br>MEDITATION</span>
+                <span class="material-icons arrow">arrow_outward</span>
+              </div>
+              <div class="mobile-mockup">
+                <div class="screen">
+                  <div class="mini-soul-glow"></div>
+                  <p class="mockup-text">MAKE YOUR<br>MIND PEACEFUL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Content -->
+          <div class="grid-center">
+            <h1 class="hero-title">CONNECT WITH<br>THE SUPREME SOUL</h1>
+            <button class="action-pill" onclick="showPage('theme')">
+              <span class="material-icons star-icon">auto_awesome</span>
+              Experience Peace
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Bottom Layout -->
+        <div class="bottom-bar">
+          <div class="bottom-item text-section">
+            <h2 class="bottom-title">Define your<br>spiritual journey<br>with Rajyoga</h2>
+          </div>
+          
+          <div class="bottom-item widget-section">
+            <div class="glass-card landscape-card">
+              <p class="widget-desc">Manage your peaceful<br>state with Rajyoga</p>
+              <div class="widget-interactive">
+                <div class="toggle-bg">
+                  <div class="toggle-gradient"></div>
+                  <div class="toggle-pill">
+                    <span class="toggle-label">Peace</span>
+                    <div class="toggle-knob"><div class="knob-dot"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-item stats-section">
+            <div class="stats-block">
+              <h3 class="stat-number">2.4M</h3>
+              <p class="stat-label">SOULS EXPERIENCING<br>PEACE GLOBALLY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Theme Page -->
+    <section id="theme" class="page" aria-labelledby="theme-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button id="btn-home" class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="glass-panel">
+        <h2 id="theme-heading">Experience Peace</h2>
+        <div class="hindi-text">ॐ शांति - आत्मा शांति का स्वरूप है</div>
+        <div class="soul-light" style="width: 80px; height: 80px; animation-duration: 3s;"></div>
+        <p>Prepare yourself for a deep, guided state of inner silence.</p>
+        <button id="btn-start" class="primary-btn" onclick="showPage('step1')">Start Meditation</button>
+      </div>
+    </section>
+
+    <!-- Step 1 -->
+    <section id="step1" class="page" aria-labelledby="step1-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="glass-panel">
+        <h2 id="step1-heading">Relax Your Body</h2>
+        <p>Let go of all physical tension. Imagine a divine light healing every cell of your body.</p>
+        <button id="btn-step1-next" class="primary-btn" onclick="showPage('step2')">Continue</button>
+        <div class="step-indicator" aria-hidden="true">
+          <div class="step-dot active"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section id="step2" class="page" aria-labelledby="step2-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="glass-panel">
+        <h2 id="step2-heading">Focus on Your Breath</h2>
+        <p>Breathe in peace, breathe out worries. Observe the silent rhythm of your breath.</p>
+        <button id="btn-step2-next" class="primary-btn" onclick="showPage('step3')">Continue</button>
+        <div class="step-indicator" aria-hidden="true">
+          <div class="step-dot"></div>
+          <div class="step-dot active"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section id="step3" class="page" aria-labelledby="step3-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="glass-panel">
+        <h2 id="step3-heading">Connect with Inner Self</h2>
+        <p>You are a tiny, radiant point of light, seated at the center of your forehead. A pure soul.</p>
+        <button id="btn-step3-next" class="primary-btn" onclick="showPage('step4')">Continue</button>
+        <div class="step-indicator" aria-hidden="true">
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot active"></div>
+          <div class="step-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section id="step4" class="page" aria-labelledby="step4-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="glass-panel">
+        <div class="soul-light" style="width: 150px; height: 150px; background: radial-gradient(circle, #fff, #ff5722 30%, transparent 70%);"></div>
+        <h2 id="step4-heading">Experience the Supreme</h2>
+        <p>Connect with the Ocean of Peace. You are surrounded by divine love and light.</p>
+        <button id="btn-finish" class="primary-btn" onclick="showPage('final')">Finish</button>
+        <div class="step-indicator" aria-hidden="true">
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot active"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Page -->
+    <section id="final" class="page" aria-labelledby="final-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="glass-panel">
+        <h2 id="final-heading">You Are Peace</h2>
+        <p>Carry this stillness with you into the world.</p>
+        <div class="hindi-text" style="font-size: 2rem; margin-top: 1rem;">✨ ॐ शांति ✨</div>
+        <button id="btn-restart" class="primary-btn" onclick="showPage('intro')" style="margin-top: 2rem;">Return to the World</button>
+      </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page about-page" aria-labelledby="about-heading">
+      <nav class="top-nav" aria-label="Main Navigation">
+        <button class="btn-icon" onclick="showPage('intro')" title="Home">
+          <span class="material-icons">home</span>
+        </button>
+      </nav>
+      <div class="about-hero">
+        <h2 id="about-heading" style="font-size: clamp(3rem, 5vw, 4rem); text-shadow: 0 0 20px rgba(255,87,34,0.4); font-family: 'Cinzel', serif; color: var(--color-primary-light); margin-bottom: 0;">About Rajyoga</h2>
+      </div>
+
+      <!-- Section 1: What is Rajyoga -->
+      <div class="parallax-section" style="background-image: url('assets/img1.png');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+          <div class="info-section" style="margin-bottom: 0;">
+            <h3>What is Rajyoga Meditation?</h3>
+            <p>Rajyoga Meditation is a simple and powerful form of meditation taught mainly by the Brahma Kumaris.</p>
+            <ul class="process-steps" style="margin-top: 1rem; margin-bottom: 1rem;">
+              <li><strong>“Raj”</strong> = King (self-control)</li>
+              <li><strong>“Yoga”</strong> = Connection (with the Supreme)</li>
+            </ul>
+            <p>So, Rajyoga means becoming the ruler of your mind by connecting with the Supreme Soul (God).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Unlike other meditation -->
+      <div class="parallax-section" style="background-image: url('assets/img2.jpg');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+          <div class="info-section" style="margin-bottom: 0;">
+            <h3>Unlike other meditation:</h3>
+            <ul class="process-steps" style="margin-top: 1rem; margin-bottom: 1rem;">
+              <li>No mantras</li>
+              <li>No complicated posture</li>
+              <li>Can be done with open eyes</li>
+              <li>Can be practiced anywhere, anytime</li>
+            </ul>
+            <p>It is a self-awareness meditation where you realize:<br><strong style="color: var(--color-primary-light); font-size: 1.25rem;">“I am a soul (energy), not just a body.”</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Core Philosophy -->
+      <div class="parallax-section" style="background-image: url('assets/img3.png');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+          <div class="info-section" style="margin-bottom: 0;">
+            <h3>Core Philosophy</h3>
+            <p>The core philosophy of Rajyoga rests on the understanding that every individual is fundamentally a peaceful and pure spiritual energy (soul). By shifting our awareness from the physical body to this spiritual identity, we can directly commune with the Supreme Source of light, love, and power.</p>
+            
+            <div style="margin-top: 2rem;">
+              <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 1rem; font-size: 1.2rem; font-family: 'Cinzel', serif; letter-spacing: 1px;">Rajyoga is based on 3 main ideas:</p>
+              <ul class="process-steps" style="margin-top: 1rem; margin-bottom: 2rem;">
+                <li>
+                  <strong>1. I am a Soul</strong>
+                  <p style="margin-top: 0.5rem; padding-left: 1.5rem; font-size: 1.05rem;">- A tiny point of spiritual energy in the forehead</p>
+                </li>
+                <li>
+                  <strong>2. God is Supreme Soul</strong>
+                  <p style="margin-top: 0.5rem; padding-left: 1.5rem; font-size: 1.05rem;">- A powerful, pure source of peace and energy</p>
+                </li>
+                <li>
+                  <strong>3. Connection = Charging</strong>
+                  <p style="margin-top: 0.5rem; padding-left: 1.5rem; font-size: 1.05rem;">- When you connect, you recharge your mind</p>
+                </li>
+              </ul>
+              
+              <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.8rem; font-size: 1.15rem;">This helps you:</p>
+              <ul style="margin-left: 1.5rem; margin-bottom: 0; line-height: 1.8; font-size: 1.1rem; color: rgba(255, 255, 255, 0.9);">
+                <li>Control thoughts</li>
+                <li>Reduce stress</li>
+                <li>Improve focus</li>
+                <li>Feel peace and happiness</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Step by Step and Benefits -->
+      <div class="parallax-section" style="background-image: url('assets/img4.jpg');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content" style="max-height: none;">
+          <div class="info-section">
+            <h3>Step-by-Step Process</h3>
+                        <div class="tabs-container">
+              <div class="tab-headers">
+                <button class="tab-btn active" onclick="switchTab(event, 'step-contemplate')">1. Contemplate</button>
+                <button class="tab-btn" onclick="switchTab(event, 'step-concentrate')">2. Concentrate</button>
+                <button class="tab-btn" onclick="switchTab(event, 'step-experience')">3. Experience</button>
+                <button class="tab-btn" onclick="switchTab(event, 'step-maintain')">4. Maintain</button>
+              </div>
+
+              <!-- Contemplate -->
+              <div id="step-contemplate" class="tab-content active">
+                <p style="font-size: 1.15rem; margin-bottom: 1rem;"><strong>Contemplate (सोच / Awareness):</strong> This is the starting point of Rajyoga. Here, you gently change your identity from body-consciousness to soul-consciousness.</p>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What you do:</p>
+                  <p>You create thoughts consciously:<br><em>“I am not this body… I am a peaceful soul… a point of light.”</em></p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What is happening internally:</p>
+                  <p style="margin-bottom: 0.25rem;">• Normally, we think: <em>I am a student, dancer, body, name</em></p>
+                  <p>• In Rajyoga, you shift to: <em>I am a soul using this body</em></p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Why this step is important:</p>
+                  <p style="margin-bottom: 0.25rem;">• Your thoughts shape your feelings</p>
+                  <p>• If identity changes &rarr; mindset changes &rarr; life changes</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Example (practical):</p>
+                  <p style="margin-bottom: 0.25rem;">Before starting your day:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Instead of: <em>“I have so much work”</em></p>
+                  <p style="padding-left: 1rem;">- Think: <em>“I am a calm soul, I can handle everything peacefully.”</em></p>
+                </div>
+                <!-- Mini Gallery for Contemplate -->
+                <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center;">
+                  <img src="assets/contemplate1.png" alt="Contemplating Inner Light" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                  <img src="assets/contemplate2.png" alt="I am a soul - a being of peace" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                </div>
+              </div>
+
+              <!-- Concentrate -->
+              <div id="step-concentrate" class="tab-content">
+                <p style="font-size: 1.15rem; margin-bottom: 1rem;"><strong>Concentrate (एकाग्रता / Focus):</strong> You know who you are, the next step is to stabilize your mind.</p>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What you do:</p>
+                  <p style="margin-bottom: 0.25rem;">• Focus on:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Peace</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Stillness</p>
+                  <p style="margin-bottom: 0.5rem; padding-left: 1rem;">- Positive energy</p>
+                  <p style="margin-bottom: 0.25rem;">• You can also visualize:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- A soft light in your forehead</p>
+                  <p style="padding-left: 1rem;">- Calm vibrations spreading inside</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What is happening internally:</p>
+                  <p style="margin-bottom: 0.25rem;">• Mind starts slowing down</p>
+                  <p style="margin-bottom: 0.25rem;">• Random thoughts reduce</p>
+                  <p>• Awareness becomes steady</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Common mistake:</p>
+                  <p style="margin-bottom: 0.25rem;">People try to “stop thoughts”</p>
+                  <p><strong>Instead</strong>, guide thoughts gently</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Example:</p>
+                  <p style="margin-bottom: 0.25rem;">While studying:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Mind wandering &rarr; bring it back gently</p>
+                  <p style="padding-left: 1rem;">- Think: <em>“I am a focused soul… my mind is stable.”</em></p>
+                </div>
+                <!-- Mini Gallery for Concentrate -->
+                <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center;">
+                  <img src="assets/concentrate1.png" alt="Concentrating Soul Energy" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                </div>
+              </div>
+
+              <!-- Experience -->
+              <div id="step-experience" class="tab-content">
+                <p style="font-size: 1.15rem; margin-bottom: 1rem;"><strong>Experience (अनुभव / Feeling):</strong> This is where meditation becomes real and powerful.</p>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What you do:</p>
+                  <p style="margin-bottom: 0.5rem;">You don’t just think — you feel deeply:</p>
+                  <p style="margin-bottom: 0.25rem;">• Peace</p>
+                  <p style="margin-bottom: 0.25rem;">• Love</p>
+                  <p style="margin-bottom: 0.25rem;">• Happiness</p>
+                  <p style="margin-bottom: 0.5rem;">• Power</p>
+                  <p>Especially by connecting with the Supreme Soul (God)</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What is happening internally:</p>
+                  <p style="margin-bottom: 0.25rem;">• Thoughts &rarr; Emotions</p>
+                  <p style="margin-bottom: 0.5rem;">• Emotions &rarr; Experience</p>
+                  <p style="margin-bottom: 0.25rem;">So now:</p>
+                  <p style="margin-bottom: 0.25rem;">You are not saying <em>“I am peaceful”</em></p>
+                  <p>You are actually <strong style="color: var(--color-primary-light);">feeling peace</strong></p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Analogy:</p>
+                  <p style="margin-bottom: 0.25rem;">Like charging a phone:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Contemplate = plug in</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Concentrate = connect properly</p>
+                  <p style="padding-left: 1rem;">- Experience = battery charging</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Example:</p>
+                  <p style="margin-bottom: 0.25rem;">Before a performance (like Kathak):</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Feel: <em>“I am confident, powerful, calm”</em></p>
+                  <p style="padding-left: 1rem;">- This creates real stage presence</p>
+                </div>
+                <!-- Mini Gallery for Experience -->
+                <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center;">
+                  <img src="assets/experience1.jpg" alt="Experiencing Inner Peace" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                  <img src="assets/experience2.png" alt="Experiencing Spiritual Power" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                </div>
+              </div>
+
+              <!-- Maintain -->
+              <div id="step-maintain" class="tab-content">
+                <p style="font-size: 1.15rem; margin-bottom: 1rem;"><strong>Maintain (धारण / Living it):</strong> This is the most important and advanced step. Meditation is not just for 10 minutes. It should become your way of living.</p>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What you do:</p>
+                  <p style="margin-bottom: 0.25rem;">• Carry the same awareness into:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Studying</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Dancing</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem;">- Talking</p>
+                  <p style="padding-left: 1rem;">- Stress situations</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">What is happening internally:</p>
+                  <p style="margin-bottom: 0.25rem;">• Reactions reduce</p>
+                  <p>• You respond calmly instead of reacting emotionally</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Real-life application:</p>
+                  <p style="margin-bottom: 0.25rem;">• Someone criticizes you:</p>
+                  <p style="margin-bottom: 0.25rem; padding-left: 1rem; color: #ff8a65;">- React: anger</p>
+                  <p style="margin-bottom: 0.5rem; padding-left: 1rem; color: #aed581;">- Maintain: <em>“I am a peaceful soul… I stay stable”</em></p>
+                  <p style="margin-bottom: 0.25rem;">• During a busy day:</p>
+                  <p style="padding-left: 1rem;">- Stay centered and focused</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                  <p style="color: var(--color-primary-light); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem;">Key skill: Detached involvement</p>
+                  <p style="margin-bottom: 0.25rem;">• Do everything</p>
+                  <p>• But stay internally peaceful</p>
+                </div>
+                <!-- Mini Gallery for Maintain -->
+                <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center;">
+                  <img src="assets/maintain1.png" alt="Maintaining focus at work" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                  <img src="assets/maintain2.png" alt="Maintaining floral bloom" style="flex: 1; min-width: 220px; border-radius: 12px; object-fit: cover; max-height: 240px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid var(--color-glass-border);">
+                </div>
+              </div>
+            </div>
+
+            <!-- Summary Table -->
+            <div class="glass-table-container">
+              <h4 style="color: var(--color-primary-light); margin-bottom: 1rem; font-size: 1.25rem;">Complete Flow (Easy Way to Remember)</h4>
+              <table class="glass-table">
+                <thead>
+                  <tr>
+                    <th>Step</th>
+                    <th>Meaning</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Contemplate</strong></td>
+                    <td>Who am I?</td>
+                    <td>Correct identity</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Concentrate</strong></td>
+                    <td>Focus mind</td>
+                    <td>Stability</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Experience</strong></td>
+                    <td>Feel it</td>
+                    <td>Inner power</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Maintain</strong></td>
+                    <td>Live it</td>
+                    <td>Life transformation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="info-section" style="margin-top: 3rem; margin-bottom: 0;">
+            <h3>Benefits of Rajyoga</h3>
+            <ul style="margin-top: 1rem; margin-left: 1.5rem; line-height: 1.8; font-size: 1.1rem; color: rgba(255, 255, 255, 0.9);">
+              <li><strong>Better concentration</strong> (helpful for studies & coding)</li>
+              <li><strong>Emotional balance</strong> (great for performers like dance)</li>
+              <li><strong>Increased energy & confidence</strong></li>
+              <li><strong>Inner peace & stress relief</strong></li>
+              <li><strong>Better relationships</strong> (positive thinking)</li>
+            </ul>
+          </div>
+
+          <div class="info-section" style="margin-top: 3rem; margin-bottom: 0;">
+            <h3>Important Tips</h3>
+            <ul style="margin-top: 1rem; margin-left: 1.5rem; line-height: 1.8; font-size: 1.1rem; color: rgba(255, 255, 255, 0.9);">
+              <li>Don’t force your mind — gently guide it</li>
+              <li>Consistency &gt; duration</li>
+              <li>Practice daily (even short sessions)</li>
+              <li>Keep thoughts simple &amp; positive</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
