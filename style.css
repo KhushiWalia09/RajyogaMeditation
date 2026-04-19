@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-  --color-bg: #110502; /* Very deep dark reddish brown */
-  --color-bg-light: #e4e2df; /* Used in SETO but we are doing supreme soul dark/light hybrid */
-  --color-primary: #ff5722; /* Vibrant Orange/Red */
-  --color-primary-light: #ffcd70; /* Golden Yellow */
+  --color-bg: #110502;
+  --color-bg-light: #e4e2df;
+  --color-primary: #ff5722;
+  --color-primary-light: #ffcd70;
   --color-text: #fdfaf0;
   --color-text-dark: #2a2a2a;
   --color-glass: rgba(255, 255, 255, 0.05);
@@ -17,7 +17,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background-color: var(--color-bg); /* Dark background baseline */
+  background-color: var(--color-bg);
   color: var(--color-text);
   overflow: hidden;
   height: 100vh;
@@ -25,9 +25,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* =========================================
-   Aura Background (for sequence pages)
-========================================= */
 .aura-container {
   position: fixed;
   inset: 0;
@@ -53,9 +50,6 @@ body {
   100% { transform: translate(8%, 12%) scale(1.15); }
 }
 
-/* =========================================
-   Page Transitions Container
-========================================= */
 #app-container {
   position: relative;
   z-index: 10;
@@ -82,14 +76,11 @@ body {
   transform: scale(1) translateY(0);
 }
 
-/* =========================================
-   Landing Page (SETO Redesign)
-========================================= */
 .landing-page {
-  display: block; /* Override default flex */
-  transform: scale(1) translateY(0); /* Avoid scaling animation on base */
+  display: block;
+  transform: scale(1) translateY(0);
   transition: opacity 0.6s ease;
-  background-color: #d1cbc1; /* Muted cool background from SETO base */
+  background-color: #d1cbc1;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -147,7 +138,6 @@ body {
   background: rgba(255, 255, 255, 0.06);
 }
 
-/* Tabs styles */
 .tabs-container {
   margin-top: 2rem;
   background: rgba(0, 0, 0, 0.3);
@@ -193,22 +183,13 @@ body {
 .tab-content.active {
   display: block;
 }
-@media (max-width: 768px) {
-  .tab-headers {
-    flex-wrap: wrap;
-  }
-  .tab-btn {
-    flex: 1 1 50%;
-    border-bottom: 1px solid var(--color-glass-border);
-  }
-}
 
 .parallax-section {
   position: relative;
   width: 100%;
   min-height: 80vh;
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment: scroll; /* Adjusted properly everywhere */
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -239,7 +220,6 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
-/* Custom scrollbar for landing page */
 .landing-page::-webkit-scrollbar {
   width: 8px;
 }
@@ -251,13 +231,11 @@ body {
   border-radius: 8px;
 }
 
-/* Landing specific background simulating the gradient & supreme soul */
 .landing-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
-  /* Instead of a harsh dark, we make a soft bright aesthetic blending to dark corners based on SETO */
   background: linear-gradient(135deg, #e8dfd8 0%, #cbd1d5 100%);
 }
 
@@ -310,10 +288,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 4rem;
-  color: #1a1a1a; /* Dark text for light background */
+  color: #1a1a1a;
 }
 
-/* Landing Navbar */
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -355,7 +332,6 @@ body {
 }
 .nav-btn-pill:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); background: #f9f9f9; }
 
-/* Hero Grid */
 .hero-grid {
   display: flex;
   justify-content: space-between;
@@ -377,7 +353,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.4;
   font-weight: 400;
-  color: #fff; /* High contrast over orange */
+  color: #fff;
   text-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
@@ -478,7 +454,6 @@ body {
 }
 .star-icon { color: #ffcd70; font-size: 1.3rem; }
 
-/* Bottom Bar */
 .bottom-bar {
   display: flex;
   justify-content: space-between;
@@ -550,9 +525,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* =========================================
-   Meditation Flow Pages (Resting inside)
-========================================= */
 .glass-panel {
   background: var(--color-glass);
   backdrop-filter: blur(20px);
@@ -581,7 +553,6 @@ body {
 
 @keyframes shine { 0% { left: -100%; } 20% { left: 200%; } 100% { left: 200%; } }
 
-/* Flow Typography */
 .glass-panel h1, .glass-panel h2, .glass-panel h3 {
   font-family: 'Cinzel', serif;
   color: var(--color-primary-light);
@@ -613,7 +584,6 @@ body {
   text-shadow: 0 0 15px rgba(255, 205, 112, 0.4);
 }
 
-/* Premium Flow Buttons */
 .primary-btn {
   background: transparent;
   color: var(--color-primary-light);
@@ -639,7 +609,6 @@ body {
 .primary-btn:hover { color: var(--color-bg); box-shadow: 0 0 25px rgba(255,205,112,0.4); border-color: transparent; }
 .primary-btn:hover::before { transform: scaleY(1); }
 
-/* Nav Button Default */
 .top-nav { position: absolute; top: 40px; left: 40px; z-index: 20; }
 .btn-icon {
   background: rgba(255,255,255,0.05); border: 1px solid var(--color-glass-border);
@@ -652,7 +621,6 @@ body {
   border-color: transparent; box-shadow: 0 0 20px rgba(255,205,112,0.4);
 }
 
-/* Animated Flow Elements */
 .soul-light {
   width: 100px; height: 100px;
   background: radial-gradient(circle, #ffffff, var(--color-primary-light) 20%, transparent 70%);
@@ -668,9 +636,6 @@ body {
 .step-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 255, 255, 0.2); transition: all 0.4s ease; }
 .step-dot.active { background: var(--color-primary-light); box-shadow: 0 0 12px var(--color-primary-light); transform: scale(1.6); }
 
-/* =========================================
-   About Page Specifics
-========================================= */
 .content-panel {
   max-width: 900px;
   align-items: flex-start;
@@ -736,7 +701,6 @@ body {
   font-size: 1.25rem;
 }
 
-/* Custom scrollbar for scrollable panels */
 .content-panel::-webkit-scrollbar {
   width: 8px;
 }
@@ -753,15 +717,15 @@ body {
 @media (max-width: 1024px) {
   .landing-content { padding: 2rem; }
   .bottom-bar { flex-direction: column; align-items: center; text-align: center; gap: 2rem; padding-bottom: 2rem; }
-  .grid-left { display: none; } /* Simplify on smaller screens */
-  .bottom-title { font-size: 1.8rem; }
-  .bottom-title br { display: none; }
+  .grid-left { display: none; }
   
-  /* Fix absolute positioning overlap of center element */
+  .bottom-title { font-size: 1.8rem; }
+  /* We removed the br {display: none} to fix the text spacing bug reported by subagent */
+  
   .hero-grid {
     justify-content: center;
     position: relative;
-    min-height: 45vh;
+    min-height: 40vh;
   }
   .grid-center {
     position: relative;
@@ -769,6 +733,7 @@ body {
     top: auto;
     transform: none;
     margin: auto 0;
+    padding-bottom: 2rem;
   }
 }
 
@@ -776,39 +741,56 @@ body {
   .hero-title { font-size: 3rem; }
   .glass-panel { padding: 2rem 1.5rem; max-width: 95%; }
   .content-panel { max-height: 80vh; padding: 2rem 1.5rem; }
-  .nav-links { display: none; }
   
-  /* Parallax Layout Fixes */
+  /* IMPORTANT: Re-enabled nav-links on smaller screens and adjusted spacing */
+  .nav-links { gap: 1.5rem; font-size: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem; }
+  
+  /* Fix parallax backgrounds on phone so they aren't stretched/pixelated */
+  .parallax-section {
+    background-size: cover;
+    background-position: top center;
+  }
   .parallax-content {
     width: 95%;
     padding: 2rem 1.5rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
   
-  /* Typography Scale Down */
   .info-section h3 { font-size: 1.4rem; }
   .info-section p, .glass-table td, ul li, .tab-btn { font-size: 1rem !important; }
-  .glass-table th { font-size: 1.05rem; padding: 1rem 0.5rem; }
-  .glass-table td { padding: 0.8rem 0.5rem; }
   
-  /* Image Galleries Force Stack on Phones */
+  /* Improved table styling for small screens */
+  .glass-table th { font-size: 1.05rem; padding: 0.8rem 0.5rem; }
+  .glass-table td { padding: 0.8rem 0.5rem; word-break: break-word; }
+  
   .tab-content { padding: 1rem; }
-  .tab-content img {
-    min-width: 100% !important;
-  }
+  .tab-content img { min-width: 100% !important; height: auto; }
 }
 
 @media (max-width: 480px) {
   .landing-content { padding: 1.5rem 1rem; }
-  .top-bar { flex-direction: column; gap: 1rem; justify-content: center; align-items: center; }
+  
+  .top-bar { flex-direction: column; gap: 1rem; justify-content: center; align-items: center; text-align: center; }
   .top-bar > div:first-child { flex-direction: column !important; align-items: center !important; text-align: center; }
   .made-by-text { padding-left: 0 !important; margin-top: 4px !important; }
   
-  .about-hero { padding: 6rem 1rem 3rem 1rem; }
-  .hero-title { font-size: 2.2rem; }
+  /* Small screen adjustments to fit nav-links neatly below logo */
+  .nav-links { margin-top: 0.5rem; margin-bottom: 0.5rem; gap: 1.5rem; }
+  
+  .about-hero { padding: 5rem 1rem 2rem 1rem; }
+  .hero-title { font-size: 2.2rem; margin-bottom: 1.5rem; }
   .action-pill { padding: 12px 24px; font-size: 1rem; }
-  .parallax-content { padding: 1.5rem 1rem; margin: 2rem auto; }
-  .glass-table { display: block; overflow-x: auto; white-space: nowrap; }
+  
+  .parallax-content { padding: 1.5rem 1rem; margin: 1.5rem auto; }
+  
+  /* Make table scrollable cleanly without squishing too much */
+  .glass-table-container { overflow-x: auto; margin-bottom: 2rem; }
+  .glass-table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  
   .landscape-card { width: 100%; max-width: 320px; }
   .stats-block h3 { font-size: 2.5rem; }
+
+  /* Ensure tabs look fine */
+  .tab-headers { flex-direction: column; }
+  .tab-btn { width: 100%; border-bottom: 1px solid var(--color-glass-border); padding: 0.8rem; }
 }
